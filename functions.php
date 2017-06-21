@@ -2,7 +2,16 @@
 function strongly_setup (){
  load_theme_text_domain( 'strongly' );
 
- add_theme_support( 'title-tag' );
+ add_theme_support( 'title-tag' );  //изменение логотипа из админки
+
+ add_theme_support ( 'custom-logo' , array(
+'height' => число,
+'width' => число,
+'flex-width' => true
+) );       //добавляет возможность загрузку собственного логотипа на сайт., для этого в хидере замекняем img на <?php the_custom_logo(); //?//>
+
+
+
 }
 
 add_action( 'after_theme_setup' , 'strongly_setup' );
