@@ -10,7 +10,9 @@ function strongly_setup (){
 'flex-width' => true
 ) );       //добавляет возможность загрузку собственного логотипа на сайт., для этого в хидере замекняем img на <?php the_custom_logo(); //?//>
 
+add_theme_support( 'html5' , array( 'search-form' , 'gallery' , 'caption' ));    //поддержка HTML5
 
+register_nav_menu( 'primary', 'primary menu' );
 
 }
 

@@ -32,7 +32,33 @@
 
 						<!-- Nav -->
 							<nav id="nav">
-								<ul>
+							<?php 
+									/**
+										* Displays a navigation menu
+										* @param array $args Arguments
+										*/
+										$args = array(
+											'theme_location' => '',
+											'menu' => '',
+											'container' => 'ul',   //оборачивает меню в тег ul
+											'container_class' => 'header_menu',  //обязательные классы для меню
+											'container_id' => '',
+											'menu_class' => 'header_menu',
+											'menu_id' => '',
+											'echo' => true,
+											'fallback_cb' => 'wp_page_menu',
+											'before' => '',
+											'after' => '',
+											'link_before' => '',
+											'link_after' => '',
+											'items_wrap' => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+											'depth' => 0,
+											'walker' => ''
+										);
+
+										wp_nav_menu( $args );
+ 							?>
+								<ul class = "header_menu">
 									<li><a class="icon fa-home" href="index.html"><span>Introduction</span></a></li>
 									<li>
 										<a href="#" class="icon fa-bar-chart-o"><span>Dropdown</span></a>
