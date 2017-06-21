@@ -1,4 +1,12 @@
 <?php 
+function strongly_setup (){
+ load_theme_text_domain( 'strongly' );
+
+ add_theme_support( 'title-tag' );
+}
+
+add_action( 'after_theme_setup' , 'strongly_setup' );
+
 
 function strongly_scripts() {
 	
