@@ -1,4 +1,17 @@
-@import url("font-awesome.min.css");
+/*
+Theme Name: strongly
+Theme URI: 
+Author: Devergence
+Author URI: 
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: strongly
+Tags:
+*/
+
+@import url("css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
 
 /*
@@ -6,6 +19,14 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+@font-face {
+    font-family: 'fontawesome-webfont';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.svg#HeydingsCommonIconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 /* Reset */
@@ -1592,7 +1613,7 @@ button.alt:active,
 }
 
 #banner-wrapper .inner {
-    background: url("../../images/banner.jpg");
+    background: url("images/banner.jpg");
     background-size: cover;
 }
 
@@ -1971,7 +1992,7 @@ button.alt:active,
         width: 35px;
         height: 141px;
         margin-top: -70px;
-        background: url("images/bracket.svg");
+        background: url("css/images/bracket.svg");
         opacity: 0.15;
     }
     #banner:before {
