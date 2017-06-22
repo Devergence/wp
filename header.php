@@ -58,7 +58,7 @@
 
 										wp_nav_menu( $args );
  							?>
-								<ul class = "header_menu">
+								<!--<ul class = "header_menu">
 									<li><a class="icon fa-home" href="index.html"><span>Introduction</span></a></li>
 									<li>
 										<a href="#" class="icon fa-bar-chart-o"><span>Dropdown</span></a>
@@ -80,7 +80,7 @@
 									<li><a class="icon fa-cog" href="left-sidebar.html"><span>Left Sidebar</span></a></li>
 									<li><a class="icon fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li>
 									<li><a class="icon fa-sitemap" href="no-sidebar.html"><span>No Sidebar</span></a></li>
-								</ul>
+								</ul>-->
 							</nav>
 
 					</div>
